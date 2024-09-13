@@ -1,4 +1,4 @@
-package Edu.Will.Banco;
+package edu.will.banco;
 
 import java.util.Scanner;
 
@@ -33,6 +33,4 @@ public class ContaTerminal {
 
         sc.close();
     }
-    
-    
 }
