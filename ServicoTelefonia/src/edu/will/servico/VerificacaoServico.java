@@ -28,9 +28,9 @@ public class VerificacaoServico {
         }
           
         if(contratado == true){
-        System.out.println("Sim");
+            System.out.println("Sim");
         }else{
-        System.out.println("Nao");
+            System.out.println("Nao");
         }
 
         scanner.close();
