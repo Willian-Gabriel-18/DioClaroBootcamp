@@ -16,7 +16,7 @@ public class CarrinhoDeCompras{
      *exibirItens(): Exibe todos os itens presentes no carrinho, mostrando seus nomes, preços e quantidades.
      */
     public void adicionarItem(String nome, double preco, int quantidade){
-        itens.add(new Item(nome, preco, quantidade));
+        this.itens.add(new Item(nome, preco, quantidade));
     }
 
     public void removerItem(String nome){
