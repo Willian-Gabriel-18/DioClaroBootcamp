@@ -5,7 +5,6 @@ public class App {
         CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
         carrinho.adicionarItem("Item 1", 10, 15);
         carrinho.adicionarItem("Item 2", 50, 8);
-        carrinho.adicionarItem("Item 1", 5, 1);
         carrinho.adicionarItem("Item 3", 2, 1);
         carrinho.adicionarItem("Item 4", 4, 4);
         carrinho.adicionarItem("Item 5", 3, 3);
