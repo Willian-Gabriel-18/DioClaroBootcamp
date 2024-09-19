@@ -1,5 +1,7 @@
 package edu.will.iphone;
 
-public class NavegadorInternet {
-    
+public interface NavegadorInternet {
+    public void exibirPagina(String url);
+    public void adicionarNovaAba();
+    public void atualizarPagina();
 }
