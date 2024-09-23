@@ -26,7 +26,7 @@ public class OrdenacaoPessoas {
             return pessoasOrdenadasPorIdade;
         }
         else{
-            return null;
+            throw new RuntimeException("A lista esta vazia!");
         }
     }
 
@@ -37,7 +37,7 @@ public class OrdenacaoPessoas {
             return pessoasOrdenadasPorAltura;
         }
         else{
-            return null;
+            throw new RuntimeException("A lista esta vazia!");
         }
     }
 
