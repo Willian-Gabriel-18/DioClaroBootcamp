@@ -8,9 +8,12 @@ public class App {
         agendaDeContatos.adicionarContato("Gabriela",34322423);
         agendaDeContatos.adicionarContato("Diego",452133);
         agendaDeContatos.adicionarContato("Luna",67565);
+        agendaDeContatos.adicionarContato("Diego",1312312);
         agendaDeContatos.exibirContatos();
 
+        System.out.println("\n------------------------------");
         agendaDeContatos.atualizarNumeroContato("Gabriela", 100001);
+        System.out.println(agendaDeContatos.pesquisarPorNome("Diego"));
         agendaDeContatos.exibirContatos();
     }
 }

@@ -31,7 +31,7 @@ public class AgendaContatos {
 
     public Set<Contato> pesquisarPorNome(String nome){
         Set<Contato> listaPorNome = new HashSet<>();
-        if(!listaPorNome.isEmpty()){
+        if(!agendaContatos.isEmpty()){
             for(Contato o: agendaContatos){
                 if(o.getNome().equalsIgnoreCase(nome)){
                     listaPorNome.add(o);
