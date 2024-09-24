@@ -3,8 +3,6 @@ package edu.will.conjunto;
 import java.util.HashSet;
 import java.util.Set;
 
-import javax.print.attribute.HashAttributeSet;
-
 public class ConjuntoPalavrasUnicas {
     private Set<String> palavrasUnicas;
 
@@ -40,10 +38,10 @@ public class ConjuntoPalavrasUnicas {
     public void verificarPalavra(String palavra){
         if(!palavrasUnicas.isEmpty()){
             if(palavrasUnicas.contains(palavra)){
-                palavrasUnicas.remove(palavra);
+                System.out.println("A palavra " + palavra + " existe na lista!");
             }
             else{
-                System.out.println("Essa palavra nao existe nessa lista!");
+                System.out.println("A palavra " + palavra + " nao existe na lista!");
             }
         }
         else{
@@ -51,4 +49,12 @@ public class ConjuntoPalavrasUnicas {
         }
     }
 
+    public void exibirPalavrasUnicas(){
+        if(!palavrasUnicas.isEmpty()){
+            System.out.println(palavrasUnicas);
+        }
+        else{
+            System.out.println("A lista esta vazia!");
+        }
+    }
 }
