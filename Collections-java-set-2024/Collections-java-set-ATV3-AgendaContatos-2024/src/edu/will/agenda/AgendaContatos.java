@@ -33,7 +33,7 @@ public class AgendaContatos {
         Set<Contato> listaPorNome = new HashSet<>();
         if(!agendaContatos.isEmpty()){
             for(Contato o: agendaContatos){
-                if(o.getNome().equalsIgnoreCase(nome)){
+                if(o.getNome().startsWith(nome)){
                     listaPorNome.add(o);
                 }
             }
