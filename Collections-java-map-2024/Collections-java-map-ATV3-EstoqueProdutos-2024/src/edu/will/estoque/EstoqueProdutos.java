@@ -85,6 +85,20 @@ public class EstoqueProdutos {
 
     public Produto obterProdutoMaiorQuantidadeValorTotalNoEstoque(){
         Produto produtoMaiorQuantidadeValorNoEstoque = null;
-        
+        Double maiorValorTotalProdutoEstoque = 0d;
+        if(!estoqueProdutosMap.isEmpty()){
+            for(Map.Entry<Long, Produto> map: estoqueProdutosMap.entrySet()){//Com entry posso pegar tanto os valores chaves como os valores dela
+                double valorProdutoEmEstoque = map.getValue().getPreco() * map.getValue().getQuantidade();
+                if(valorProdutoEmEstoque > maiorValorTotalProdutoEstoque){
+                    maiorValorTotalProdutoEstoque = valorProdutoEmEstoque;
+                    produtoMaiorQuantidadeValorNoEstoque = map.getValue();
+                }
+            }
+
+            return produtoMaiorQuantidadeValorNoEstoque;
+        }
+        else{
+            throw new RuntimeException("O conjunto map esta vazio!");
+        }
     }
 }

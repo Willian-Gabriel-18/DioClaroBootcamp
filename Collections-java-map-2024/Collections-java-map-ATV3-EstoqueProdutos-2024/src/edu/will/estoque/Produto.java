@@ -25,7 +25,7 @@ public class Produto {
 
     @Override
     public String toString() {
-        return "\nProduto\n{nome = " + nome + "}\n{quantidade = " + quantidade + "}\n{preco = " + preco + "}\n";
+        return "\nProduto\n{nome = " + nome + "}\n{quantidade = " + quantidade + "}\n{preco = " + preco + "}\n\n";
     }    
 
     
